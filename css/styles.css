@@ -125,9 +125,18 @@ margin-right: 40px; */
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-    color: var(--header-menu-color);
+    color: #404bbf;
 }
-
+.header-menu-link:first-child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
 .header-contacts {
     font-style: normal;
 }
@@ -142,7 +151,7 @@ margin-right: 40px; */
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    /*transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,7 +159,7 @@ margin-right: 40px; */
 
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-    color: var(--header-menu-color);
+    color: #404bbf;
 }
 
 /* ------------nav------------search--------menu----- */
@@ -648,7 +657,7 @@ padding-bottom: 188px;
     list-style-type: none;
 } */
 
-
+/* 
 .portfolio-card-subtitle {
     color: var(--title-color);
     font-size: 20px;
@@ -665,11 +674,21 @@ padding-bottom: 188px;
     font-weight: 400;
     line-height: 150%;
     letter-spacing: 0.32px;
-}
+} */
 /* ./PORTOFOLIO.HTML */
 
 /* the list of buttons */
+.portfolio {
+    padding-top: 96px;
+    /* padding-bottom: 120px; */
+}
 
+.portfolio-btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
 
 .portfolio-btn {
     color: var(--main-color);
@@ -699,18 +718,6 @@ padding-bottom: 188px;
 }
 
 
-.portfolio {
-padding-top: 96px;
-/* padding-bottom: 120px; */
-}
-
-.portfolio-btn-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 72px;
-}
-
 
 
 .portfolio-card-list {
@@ -728,7 +735,7 @@ padding-top: 96px;
     width: calc((100% - 48px) / 3);
 }
 
-.portfolio-card-item:nth-child(3n) {
+/* .portfolio-card-item:nth-child(3n) {
     margin-right: 0px;
 }
 
@@ -740,7 +747,7 @@ padding-top: 96px;
     padding: 32px 16px;
     border: 1px solid var(--border);
     border-top: none;
-}
+} */
 
 
 .portfolio-card-link:hover,
