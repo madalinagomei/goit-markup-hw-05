@@ -93,12 +93,12 @@ body {
     align-items: center;
 }
 
-.header-menu-item {
-    /* padding: 24px 0;
-margin-right: 40px; */
+ /* .header-menu-item {
+    padding: 24px 0;
+margin-right: 40px; 
     color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);} */
+
 
 .header-logo {
     margin-right: 76px;
@@ -123,6 +123,8 @@ margin-right: 40px; */
     color:  var(--title-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    color: #404bbf;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover,
