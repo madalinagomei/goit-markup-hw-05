@@ -534,7 +534,10 @@ padding-bottom: 188px;
     color: var(--white);
     margin-bottom: 16px;
 }
-
+.footer-social-icon {
+    fill: var(--background-color);
+    
+}
 .footer-social-list {
     display: flex;
     gap: 16px;
@@ -543,12 +546,13 @@ padding-bottom: 188px;
 .footer-social-item {
     width: 40px;
     height: 40px;
+
 }
 
 .footer-social-link {
     width: 100%;
     height: 100%;
-    background-color: var(--main-color);
+    background-color: var(--text-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -563,10 +567,12 @@ padding-bottom: 188px;
 
 .footer-social {
     fill: var(--background-color);
+ 
 }
 
 .footer-logo-wrap {
     margin-right: 120px;
+
 }
 
 
